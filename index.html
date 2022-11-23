@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+      <!-- swiper cdn -->
+     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+     <!-- glider css -->
+     <link rel="stylesheet" href="glider.min.css">
+    <!-- bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+   
+    <title>Document</title>
+</head>
+<body> 
+    <div class="fixed-container">
+        
+
+    
+      <div class="hambar ">
+        <i id="open-bar" class="fa-solid fa-bars"></i>
+        <i id="close-bar" class="fa-regular fa-circle-xmark"></i>
+      </div>
+      <nav class="navbar-main">
+     
+        <div class="logo">
+          <a href=""><i class="fa-solid fa-stethoscope"></i>Health</a>
+        </div>
+
+        <div class="navbar-link">
+         <ul>
+            <li ><a class="active-home" href="index.html" >Home</a>
+            
+             <ul>
+              <li><a href="">HOME V1</a> </li>
+              <li> <a href="">HOME V2</a></li>
+              <li> <a href="">HOME V3</a></li>
+              <li><a href="">HOME V1</a> </li>
+              <li> <a href="">HOME V2</a></li>
+              <li> <a href="">HOME V3</a></li>
+             </ul>
+            </li>
+          
+          
+          <li><a href="about.html">About </a></li>
+          <li><a href="#">Service </a>
+            <ul>
+              <li><a href="">SERVICE V1</a> </li>
+              <li> <a href="">SERVICE  V2</a></li>
+              <li> <a href="">SERVICE  V3</a></li>
+              <li><a href="">SERVICE V1</a> </li>
+              <li> <a href="">SERVICE  V2</a></li>
+              <li> <a href="">SERVICE  V3</a></li>
+             </ul>
+          
+          </li>
+          <li><a href="#">Pages</a>
+          
+
+            <ul>
+              <li><a href="">  page 1</a> </li>
+              <li> <a href=""> page 2</a></li>
+              <li> <a href=""> page 3</a></li>
+              <li><a href="">  page 4</a> </li>
+              <li> <a href=""> page 5</a></li>
+              <li> <a href=""> page 6</a></li>
+             </ul>
+          </li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="blog.html"> Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+       
+         </ul>
+        </div>
+        <div class="search-box">
+
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+
+      </nav>
+   <!-- section navbar end  -->
+
+ <!-- section  header slider start -->
+
+
+<!-- Slider main container -->
+<div class="swiper">
+
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img class="img-fluid" src="images/slider1.jpg" alt="" >
+
+        <div class="slider-text">
+          <h1>Meet Our Doctor's Team</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, debitis!
+           Lorem ipsum dolor, <br>sit amet consectetur adipisicing elit.o?</p>
+           <div class="big-button">
+            <button type="button">KNow More</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img class="img-fluid" src="images/slider2.jpg" alt="">
+
+        <div class="slider-text">
+          <h1>Book Your Appointment</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, debitis!
+           Lorem ipsum dolor, <br>sit amet consectetur adipisicing elit.o?</p>
+           <div class="big-button">
+             <button type="button">Book Now</button>
+           </div>
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+ 
+  </div>
+
+
+
+  <div class="row justify-content-center position-set">
+    <div class="col-sm-6  col-lg-3 box  " >
+      <div class="card box-padding">
+        <div class="card-body">
+          <div class="card-flex">
+            <h5 class="card-title">Diabetes and Obesity<br> Counseling</h5>
+            <i class="fa-solid fa-heart-pulse"></i>
+           </div>
+    
+          <p class="card-text">With supporting text below as a natural lead-in to<br> 
+           Lorem, ipsum dolor sit amet consectetur adipisicing </p>
+         <div class="sm-button">
+          <button type="button"> <a href="blog.html" class="btn">Read More</a></button>
+         </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-sm-6  col-lg-3 box">
+      <div class="card box-padding">
+        <div class="card-body">
+         <div class="card-flex">
+          <h5 class="card-title">Obstetrics <br>and Gynaecology</h5>
+          <i class="fa-solid fa-briefcase-medical"></i>
+         </div>
+         <p class="card-text">With supporting text below as a natural lead-in to<br> 
+          Lorem, ipsum dolor sit amet consectetur adipisicing </p>
+          <div class="sm-button">
+            <button type="button"> <a href="blog.html" class="btn">Read More</a></button>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6  col-lg-3 box">
+      <div class="card box-padding " >
+        <div class="card-body">
+          <div class="card-flex">
+            <h5 class="card-title">Surgical and medical<br> Oncology</h5>
+            <i class="fa-solid fa-wheelchair"></i>
+           </div>
+           <p class="card-text">With supporting text below as a natural lead-in to<br> 
+            Lorem, ipsum dolor sit amet consectetur adipisicing </p>
+            <div class="sm-button">
+              <button type="button"> <a href="blog.html" class="btn">Read More</a></button>
+             </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- HEADER SECTION END HTML -->
+
+<!-- WHAT WE DO START -->
+
+ 
+
+<section class="section-work1 section-p1 section-m1 ">
+
+  <div class="row ">
+
+    <div class="col-lg-6  ">
+    
+      <h2 class="left-border">What We do</h2>
+      <div class="section-center">
+
+
+      <div class="sm-button">
+        <button type="button" class ="filter-btn active" data-id="Service #1"> Service #1</button>
+        <button type="button" class ="filter-btn" data-id="Service #2"> Service #2</button>
+        <button type="button" class ="filter-btn" data-id="Service #3"> Service #3</button>
+       </div>
+    
+    
+
+       <div class="hide active" id="Service #1">
+        
+        <div class="work1-grid active" >
+          <div class="grid-image">
+            <img src="images/1.jpg" alt="" srcset="">
+         </div>
+         <div class="grid-right-box">
+         
+            <h5>Morbi id pulvinar enim. Vestibulum sed service1 .</h5>
+            <p>Cras velit ligula, sodaleut enim quis, venenatis feugiat ante. lus facilisis nisl. Praesent aliquet
+     
+             sollicitudin leo, eu oare nibh sodales et. Vestibulum blandit,eu oare nibh sodales et.</p>
+     
+             <div class="sm-button">
+               <button type="button"> <a href="#" class="btn">Read More</a></button>
+              </div>
+         </div>
+        </div>
+       </div>
+
+      
+
+       
+       <div class="hide " id="Service #2">
+        
+        <div class="work1-grid active" >
+          <div class="grid-image">
+            <img src="images/1.jpg" alt="" srcset="">
+         </div>
+         <div class="grid-right-box">
+         
+            <h5>Morbi id pulvinar enim. Vestibulum sed service13 3.</h5>
+            <p>Cras velit ligula, sodaleut enim quis, venenatis feugiat ante. lus facilisis nisl. Praesent aliquet
+     
+             sollicitudin leo, eu oare nibh sodales et. Vestibulum blandit,eu oare nibh sodales et.</p>
+     
+             <div class="sm-button">
+               <button type="button"> <a href="#" class="btn">Read More</a></button>
+              </div>
+         </div>
+        </div>
+       </div>
+
+
+       
+       <div class="hide " id="Service #3">
+        
+        <div class="work1-grid " >
+          <div class="grid-image">
+            <img src="images/1.jpg" alt="" srcset="">
+         </div>
+         <div class="grid-right-box">
+         
+            <h5>Morbi id pulvinar enim. Vestibulum sed service1 dfsdfsdf 5.</h5>
+            <p>Cras velit ligula, sodaleut enim quis, venenatis feugiat ante. lus facilisis nisl. Praesent aliquet
+     
+             sollicitudin leo, eu oare nibh sodales et. Vestibulum blandit,eu oare nibh sodales et.</p>
+     
+             <div class="sm-button">
+               <button type="button"> <a href="#" class="btn">Read More</a></button>
+              </div>
+         </div>
+        </div>
+       </div>
+
+        <!--  -->
+
+
+
+     </div>
+    </div>
+  
+  
+  
+
+    <div class="col-lg-6 cards" >
+
+      <h2 class="half-border-bottom">Book an Appointment</h2>
+      <div class="work1-grid-container work1">
+
+        <form action="" class="form">
+  
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+        
+          <div class="mb-3 mt-3 row">
+            <div class="col-sm-12 col-lg-">
+              <input type="text" class="form-control" id="inputName" placeholder="Name">
+            </div>
+          </div>
+
+       <div class="mb-3 row">
+
+        <div class="col-sm-12 col-lg-">
+          <input type="number" class="form-control" id="inputNumber" placeholder="Number">
+        </div>
+       </div>
+            <div class="mb-3 row">
+              <div class="col-sm-12 col-lg-">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+              </div>
+            </div>
+        
+          <div class="mb-3 row">
+     
+            <div class="col-sm-12 col-lg-">
+              <input type="password" class="form-control" id="inputPassword" placeholder="password">
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+     
+            <div class="col-sm-12 col-lg-">
+              <input type="date" class="form-control" id="inputDate" placeholder="datetime">
+            </div>
+          </div>
+
+          <div class="sm-button">
+            <button type="button"> <a href="#" class="btn">Read More</a></button>
+           </div>
+        </form>
+      </div>
+
+    </div>
+  
+  
+  
+    </div>
+  
+
+</section>
+
+<!-- SECTION WORK 1 END HTML -->
+
+
+<section class="section-work2 section-p1  section-m1">
+  <h2 class="left-border">Up Comming Event</h2>
+  <div class="glider-contain">
+    <div class="glider">
+
+ 
+
+   <div>
+    <div class="fun">
+
+      <div class="fun-event"> <SPan><sub>JAN</sub> 22</SPan></div>
+     </div>
+    <div class="work2-grid cards ">
+
+   
+      <div class="grid-image">
+          <img src="images/up_comming_event1.jpg" alt="" srcset="">
+        </div>
+        <div class="grid-text">
+
+          <h5>Pelln Sque Vitea <br> Doler non</h5>
+
+            <p>Cras velit ligula, sodaleut enim quis, venenatis feugiat ante. lus facilisis nisl. Praesent aliquet
+
+              sollicitudin leo, eu oare nibh sodales et. Vestibulum blandit,eu oare nibh sodales et.</p>
+              
+          <div class="sm-button">
+            <button type="button"> <a href="#" class="btn">Read More</a></button>
+          </div>
+          </div>
+
+      </div>
+ 
+   </div>
+
+
+
+
+
+<div>
+  
+  <div class="fun">
+
+    <div class="fun-event"> <SPan><sub>JAN</sub> 23</SPan></div>
+   </div>     
+
+  <div class="work2-grid cards ">
+    <div class="grid-image">
+        <img src="images/up_comming_event3.jpg" alt="" srcset="">
+      </div>
+      <div class="grid-text">
+
+        <h5>Pelln Sque Vitea <br> Doler non</h5>
+
+          <p>Cras velit ligula, sodaleut enim quis, venenatis feugiat ante. lus facilisis nisl. Praesent aliquet
+
+            sollicitudin leo, eu oare nibh sodales et. Vestibulum blandit,eu oare nibh sodales et.</p>
+            
+        <div class="sm-button">
+          <button type="button"> <a href="#" class="btn">Read More</a></button>
+        </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+ <div>
+
+  <div class="fun">
+
+    <div class="fun-event"> <SPan><sub>JAN</sub> 12</SPan></div>
+   </div>
+  <div class="work2-grid cards ">
+    <div class="grid-image">
+        <img src="images/up_comming_event1.jpg" alt="" srcset="">
+      </div>
+      <div class="grid-text">
+
+        <h5>Pelln Sque Vitea <br> Doler non</h5>
+
+          <p>Cras velit ligula, sodaleut enim quis, venenatis feugiat ante. lus facilisis nisl. Praesent aliquet
+
+            sollicitudin leo, eu oare nibh sodales et. Vestibulum blandit,eu oare nibh sodales et.</p>
+            
+        <div class="sm-button">
+          <button type="button"> <a href="#" class="btn">Read More</a></button>
+        </div>
+        </div>
+
+    </div>
+ </div>
+
+
+
+
+
+ <div>
+
+  <div class="fun">
+
+    <div class="fun-event"> <SPan><sub>JAN</sub> 22</SPan></div>
+   </div>
+  <div class="work2-grid cards">
+    <div class="grid-image">
+        <img src="images/up_comming_event2.jpg" alt="" srcset="">
+      </div>
+      <div class="grid-text">
+
+        <h5>Pelln Sque Vitea <br> Doler non</h5>
+
+          <p>Cras velit ligula, sodaleut enim quis, venenatis feugiat ante. lus facilisis nisl. Praesent aliquet
+
+            sollicitudin leo, eu oare nibh sodales et. Vestibulum blandit,eu oare nibh sodales et.</p>
+            
+        <div class="sm-button">
+          <button type="button"> <a href="#" class="btn">Read More</a></button>
+        </div>
+        </div>
+
+    </div>
+ </div>
+
+
+
+    </div>
+    <button aria-label="Previous" class="glider-prev">«</button>
+    <button aria-label="Next" class="glider-next">»</button>
+    <div role="tablist" class="dots"></div>
+  </div>
+</section>
+
+
+
+
+<!-- SECTION WORK2 HTML END -->
+
+
+<section class="section-work3 section-p1 section-m1">
+  <h2 class="left-border">Our Doctor Team</h2>
+  <div class="glider-container">
+
+    <div class="raj">
+
+      
+  <div>
+    <div class="work3">
+
+        <img src="images/team_member1 (1).png" alt="" srcset="">
+
+        <div class="grid-text">
+
+          <h5> Dr: Jhon Doler non</h5>
+  
+            <p>Cras velit ligula, sodaleut enim quis, venenatis feugiat ante. lus facilisis nisl. Praesent aliquet
+  
+              sollicitudin leo, eu oare nibh sodales et. Vestibulum blandit,eu oare nibh sodales et.</p>
+              
+          <div class="sm-button">
+            <button type="button"> <a href="#" class="btn">Read More</a></button>
+          </div>
+          </div>
+    </div>
+
+  </div>
+
+
+
+  <div>
+    <div class="work3">
+
+        <img src="images/team_member2.png" alt="" srcset="">
+
+        <div class="grid-text">
+
+          <h5> Dr: Jhon Doler non</h5>
+  
+            <p>Cras velit ligula, sodaleut enim quis, venenatis feugiat ante. lus facilisis nisl. Praesent aliquet
+  
+              sollicitudin leo, eu oare nibh sodales et. Vestibulum blandit,eu oare nibh sodales et.</p>
+              
+          <div class="sm-button">
+            <button type="button"> <a href="#" class="btn">Read More</a></button>
+          </div>
+          </div>
+    </div>
+
+  </div>
+
+
+
+  <div>
+    <div class="work3">
+
+        <img src="images/team_member1.png" alt="" srcset="">
+
+        <div class="grid-text">
+
+          <h5> Dr: Jhon Doler non</h5>
+  
+            <p>Cras velit ligula, sodaleut enim quis, venenatis feugiat ante. lus facilisis nisl. Praesent aliquet
+  
+              sollicitudin leo, eu oare nibh sodales et. Vestibulum blandit,eu oare nibh sodales et.</p>
+              
+          <div class="sm-button">
+            <button type="button"> <a href="#" class="btn">Read More</a></button>
+          </div>
+          </div>
+    </div>
+
+  </div>
+
+
+
+  <div>
+    <div class="work3">
+
+        <img src="images/team_member3.png" alt="" srcset="">
+
+        <div class="grid-text">
+
+          <h5> Dr: Jhon Doler non</h5>
+  
+            <p>Cras velit ligula, sodaleut enim quis, venenatis feugiat ante. lus facilisis nisl. Praesent aliquet
+  
+              sollicitudin leo, eu oare nibh sodales et. Vestibulum blandit,eu oare nibh sodales et.</p>
+              
+          <div class="sm-button">
+            <button type="button"> <a href="#" class="btn">Read More</a></button>
+          </div>
+          </div>
+    </div>
+
+  </div>
+
+
+    </div>
+  </div>
+
+
+</section>
+
+
+<!-- SECTION WORK3 HTML END -->
+
+
+
+
+<section class="section-work4 section-p1 section-m1">
+  <h2 class="left-border">Our Doctor Team</h2>
+  <div class="glider-container">
+    <div class="patner">
+
+   <div><img src="images/partner1.png" alt=""></div>
+   <div><img src="images/partner2.png" alt=""></div>
+   <div><img src="images/partner4.png" alt=""></div>
+   <div><img src="images/partner1 (1).png" alt=""></div>
+   <div><img src="images/partner2.png" alt=""></div>
+   <div><img src="images/partner4.png" alt=""></div>
+   <div><img src="images/partner1.png" alt=""></div>
+   <div><img src="images/partner1.png" alt=""></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION WORD 4 HTML END -->
+
+ <footer class=" section-p1 ">
+ 
+ <div class="row">
+
+  <nav class="footer-nav">
+    <ul>
+      <li><a href=""> Home </a></li>
+      <li><a href=""> About </a></li>
+      <li><a href=""> Service </a></li>
+      <li><a href=""> Blog </a></li>
+      <li><a href=""> Our Profile </a></li>
+      <li><a href="">  Contact </a></li>
+    </ul>
+  </nav>
+ </div>
+
+
+ <div class="row logos">
+  <div class="col-md-3 "id="logo">
+    <div class="logo ">
+      <a href="" class="footer-logo"><i class="fa-solid fa-stethoscope"></i>Health</a>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium quos vitae, delectus ad nobis sed dolorum amet reiciendis. Iusto molestias aspernatur quidem iste quaerat illum voluptas quia soluta laboriosam sapiente.</p>
+
+  </div>
+ </div>
+
+ <div>
+ 
+ </div>
+ <div class="row">
+
+  <div class="col-md-3 address">
+    <h5>Get in Touch</h5>
+    <i class="fa-solid fa-location-dot"></i><span>13/2 Elizabeth Street <br>Melbourne VIC 3000, Australia</span><br>
+    <i class="fa-solid fa-mobile-screen"></i><span>+61 3 8376 6284</span> 
+  </div>
+  <div class="col-md-6">
+     <h5>Usefull Link</h5>
+    <div class="flex-div">
+       <div>
+        <ul>
+          <li><a href="http://">Pediatric Clinic</a></li>
+          <li><a href="http://">Dental Clinic</a></li>
+          <li><a href="http://">General Surgery</a></li>
+          <li><a href="http://">Physiotherapy</a></li>
+          <li><a href="http://">Ltricies lputate</a></li>
+        </ul>
+       </div>
+
+       <div>
+        <ul>
+          <li><a href="">Blog Categories</a></li>
+          <li><a href="">services Two Column</a></li>
+          <li><a href="">Blog Single Post</a></li>
+          <li><a href="">services Three Column</a></li>
+          <li><a href="">Blog Leftsidebar</a></li>
+        </ul>
+       </div>
+
+  <div>
+    <ul>
+      <li><a href="">Blog Rightsidebar</a></li>
+      <li><a href="">Typography</a></li>
+      <li><a href="">Elements</a></li>
+      <li><a href="">columns</a></li>
+      <li><a href="">icon</a></li>
+    </ul>
+  </div>
+      
+    </div>
+  </div>
+ </div>
+  <div class="row">
+    <div class=" copyright">
+      <p>Copyright © 2018 Health Care HTML Template. All Rights Reserved.</p>
+    </div>
+  </div>
+ </footer>
+
+
+
+        <!-- fixed container end -->
+    </div>
+   <!-- js file -->
+   <script src="app.js"></script>
+   <!-- GLIDER JS -->
+
+   <script src="glider.min.js"></script>
+   <!-- swiper  -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+ <!-- fontawesome  link-->
+ <script src="https://kit.fontawesome.com/83315f1487.js" crossorigin="anonymous"></script>
+    <!-- bootstrap link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script>
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  autoplay:{
+ delay:3000,
+ disableonInteraction:false,
+  },
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+    </script>
+<script>
+
+new Glider(document.querySelector('.glider'), {
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    draggable: true,
+    
+   
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    },
+   
+
+    responsive: [
+  {
+    // screens greater than >=1200px
+    breakpoint: 1200,
+    settings: {
+      // Set to `auto` and provide item width to adjust to viewport
+      slidesToShow: 3,
+      slidesToScroll: 2,
+      itemWidth: 150,
+      duration: 0.25
+    }
+  },{
+    // screens greater than >= 900px
+    breakpoint: 1090,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 1,
+     
+    }
+  },
+
+  {
+    // screens greater than >= less then 640
+    breakpoint: 900,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 1,
+     
+    }
+  },
+
+
+  {
+    // screens greater than >= 1024px
+    breakpoint: 500,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+     
+    }
+  },
+  
+  {
+    // screens greater than >= 1024px
+    breakpoint: 380,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+     
+    }
+  },
+
+  {
+    // screens greater than >= 1024px
+    breakpoint: 0,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+     
+    }
+  }
+]
+
+
+  });
+
+
+
+</script>
+
+<script>
+
+new Glider(document.querySelector('.raj'), {
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    draggable: true,
+    
+   
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    },
+   
+    responsive: [
+  {
+    // screens greater than >=1200px
+    breakpoint: 1200,
+    settings: {
+      // Set to `auto` and provide item width to adjust to viewport
+      slidesToShow: 3,
+      slidesToScroll: 2,
+      itemWidth: 150,
+      duration: 0.25
+    }
+  },{
+    // screens greater than >= 900px
+    breakpoint: 1090,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 1,
+     
+    }
+  },
+
+  {
+    // screens greater than >= less then 640
+    breakpoint: 900,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 1,
+     
+    }
+  },
+
+
+  {
+    // screens greater than >= 1024px
+    breakpoint: 500,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+     
+    }
+  },
+  
+  {
+    // screens greater than >= 1024px
+    breakpoint: 380,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+     
+    }
+  },
+
+  {
+    // screens greater than >= 1024px
+    breakpoint: 0,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+     
+    }
+  }
+]
+
+
+  });
+
+  new Glider(document.querySelector('.patner'), {
+    slidesToShow: 5,
+    slidesToScroll: 2,
+    draggable: true,
+    
+   
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    },
+   
+    responsive: [
+  {
+    // screens greater than >=1200px
+    breakpoint: 1200,
+    settings: {
+      // Set to `auto` and provide item width to adjust to viewport
+      slidesToShow: 5,
+      slidesToScroll: 2,
+      itemWidth: 150,
+      duration: 0.25
+    }
+  },{
+    // screens greater than >= 900px
+    breakpoint: 1090,
+    settings: {
+      slidesToShow: 4,
+      slidesToScroll: 1,
+     
+    }
+  },
+
+  {
+    // screens greater than >= less then 640
+    breakpoint: 900,
+    settings: {
+      slidesToShow: 4,
+      slidesToScroll: 1,
+     
+    }
+  },
+
+
+  {
+    // screens greater than >= 1024px
+    breakpoint: 500,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 1,
+     
+    }
+  },
+  
+  {
+    // screens greater than >= 1024px
+    breakpoint: 380,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+     
+    }
+  },
+
+  {
+    // screens greater than >= 1024px
+    breakpoint: 0,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+     
+    }
+  }
+]
+
+  });
+
+
+</script>
+</body>
+</html>
