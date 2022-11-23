@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;1,100&display=swap');
 
 *{
-    font-family: 'Poppins', sans-serif;
+font-family: 'Poppins', sans-serif;
 }
 
 *{
@@ -15,34 +15,34 @@ box-sizing: border-box;
 
 html,body{
 
-    width: 100%;
-    overflow-x: hidden;
+width: 100%;
+overflow-x: hidden;
 }
 
 
 .hambar {
-   
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px;
-    cursor: pointer;
-    display:none;
-    z-index: 999;     
+
+position: absolute;
+top: 0;
+right: 0;
+padding: 5px;
+cursor: pointer;
+display:none;
+z-index: 999;     
 }
 .hambar i{
-    font-size: 30px;
-    cursor: pointer;
-    margin: 10px;
-    color:white;  
- 
-  
+font-size: 30px;
+cursor: pointer;
+margin: 10px;
+color:white;  
+
+
 }
 
 i[id="open-bar"]{
-   display: block;
- 
-   
+display: block;
+
+
 }
 i[id="close-bar"]{
 display: none;
@@ -120,7 +120,7 @@ color: black;
 .navbar-link ul ul{
 
 position: absolute;
-    
+
 top: 30px;
 left: -20px;
 width: 100%;
@@ -192,7 +192,6 @@ cursor: pointer;
 .swiper{
 width: 100%;
 height: fit-content;
-
 }
 
 .swiper-slide::before{
@@ -208,13 +207,42 @@ z-index: 10;
 .swiper-slide img{
 width: 100%;
 height: 100vh;
+}
+
+
+.swiper .swiper-button-prev,.swiper .swiper-button-next{
+display: block;
+color: white;
 
 }
 
-.swiper .swiper-button-prev,.swiper .swiper-button-next{
-color: black;
-background-color: white;
-padding: 30px;
+@keyframes rotated {
+
+
+0%{
+    transform: rotate(0deg);
+}
+50%{
+    transform: rotate(490deg);
+}
+100%{
+    transform: rotate(0deg);
+}
+}
+
+.swiper:hover .swiper-button-prev,.swiper:hover .swiper-button-next{
+color: white;
+display: block;
+border: 5px solid white;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+padding-top: 20px;
+padding-left: 30px;
+border-right: 5px  solid rgb(14, 185, 134);
+border-left: 5px solid rgb(14, 185, 134);
+animation: rotated 10s  infinite ;
+
 }
 .swiper .swiper-pagination-bullet-active{
 background-color: white;
@@ -288,8 +316,8 @@ border-bottom: 2px solid rgb(14, 185, 134) !important;
 }
 .cards{ border-bottom: 2px solid rgb(14, 185, 134);}
 .box{
-    width: 25rem !important;
-    
+width: 25rem !important;
+
 }
 
 .card-flex{
@@ -319,26 +347,26 @@ border-bottom: 1px solid rgb(48, 167, 111);
 line-height: 100px;  
 }
 .hide{
-     display: none;
-     visibility: hidden;
-     /* display: grid;
-     grid-template-columns: 300px 350px 1fr; */
-   
- 
+    display: none;
+    visibility: hidden;
+    /* display: grid;
+    grid-template-columns: 300px 350px 1fr; */
+
+
 }
 .active{
-    visibility: visible;
-    display: block;
+visibility: visible;
+display: block;
 }
 
 /* .work1-grid{
-    display: grid;
-    grid-template-columns: 300px 960px;
+display: grid;
+grid-template-columns: 300px 960px;
 } */
 
 .grid-image img{
-    width: 300px;
-    height: 50vh;
+width: 300px;
+height: 50vh;
 }
 
 .grid-right-box{
@@ -364,9 +392,9 @@ padding: 5% 2%;
 .fun .fun-event span{
 
 position: absolute;
-    top: 10px;
-    color: white;
-    font-weight: bold;
+top: 10px;
+color: white;
+font-weight: bold;
 transform: rotate(-40deg);
 }
 
@@ -392,10 +420,10 @@ background-color:rgb(48, 167, 111) ;
 .work2-grid{
 border-top: 2px solid rgb(48, 167, 111);
 
-    width: 90%;
-    display: grid;
-    grid-template-columns: 150px 200px 1fr;
-    padding-top: 15%;
+width: 90%;
+display: grid;
+grid-template-columns: 150px 200px 1fr;
+padding-top: 15%;
 
 }
 
@@ -419,7 +447,7 @@ padding: 10px 10px;
 
 .work3:hover img{
 background-color:rgb(48, 167, 111);
-    
+
 }
 
 /* WORK 3 CSS END */
@@ -473,7 +501,7 @@ border-left: 1px solid white;
 /* header css end */
 
 .half-width img{
-    width: 400px;
+width: 400px;
 }
 .half-width .text{
 
@@ -498,14 +526,14 @@ padding: 10px;
 font-size: 20px;
 }
 .single-button .fa-minus{
-    display: none;
- 
+display: none;
+
 }
 .show-text .fa-minus{
-    display: block;
+display: block;
 }
 .show-text .fa-plus{
-    display: none;
+display: none;
 }
 .question{
 position: relative;
@@ -517,16 +545,16 @@ color: white;
 display: none;
 }
 .show-text .ans-box{
-    display: block;
+display: block;
 }
 
 
 .testimonial{
 border: 1px solid rgb(175, 172, 172);
-    height: 50vh;
+height: 50vh;
 overflow-y: scroll;
-    padding: 2%;
-    text-align: center;
+padding: 2%;
+text-align: center;
 
 
 }
@@ -574,26 +602,26 @@ width: 90%;
 
 
 
- .profile-header {
-    background: url("images/bn\ \(3\).jpg"), rgb(0, 0, 0,0.4);
-    background-size: cover;
-    background-position: top;
-    background-blend-mode: darken;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 50vh;
+.profile-header {
+background: url("images/bn\ \(3\).jpg"), rgb(0, 0, 0,0.4);
+background-size: cover;
+background-position: top;
+background-blend-mode: darken;
+background-repeat: no-repeat;
+background-attachment: fixed;
+height: 50vh;
 
- }
+}
 .pages-btn {
 
-    padding: 20px;
+padding: 20px;
 }
 .pages-btn button{
 
-    padding: 10px;
-    border: 0;
-    background-color: rgb(48, 167, 111);
-    color: white;
+padding: 10px;
+border: 0;
+background-color: rgb(48, 167, 111);
+color: white;
 
 
 }
@@ -615,8 +643,8 @@ background-size: cover;
 background-position: center;
 background-attachment: fixed;
 
- 
-    height: 50vh;
+
+height: 50vh;
 }
 
 /* blog header end */
@@ -639,8 +667,8 @@ width: 100%;
 display:none;
 width: 100%;
 }
- .active{
-    display: block;
+.active{
+display: block;
 }
 .comment-grid-box{
 display: grid;
@@ -653,15 +681,15 @@ border-bottom: 1px solid gray;
 border-right: 2px solid rgb(48, 167, 111)  ;
 }
 .full-height-container{
-    margin-bottom: 20px;
-   width: 100%;
+margin-bottom: 20px;
+width: 100%;
 
 }
 
 
 .full-height-container .blog-text{
-    padding: 10px;
-    background-color: rgb(231, 228, 228);
+padding: 10px;
+background-color: rgb(231, 228, 228);
 
 }
 
@@ -673,101 +701,101 @@ border-right: 2px solid rgb(48, 167, 111)  ;
 
 
 .contact-header{
- 
-    background: url("images/bn.jpg") ,rgb(0, 0, 0,0.2);
-  
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    height: 50vh;
+
+background: url("images/bn.jpg") ,rgb(0, 0, 0,0.2);
+
+background-repeat: no-repeat;
+background-blend-mode: darken;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+height: 50vh;
 }
 
 
 .top-center-text{
- position: relative;
- left: 20%;
-  width: 50%;
+position: relative;
+left: 20%;
+width: 50%;
 }
 
 .contact-grid-container {
 
 
-    display: grid;
-    grid-template-columns: repeat(2,800px);
-    gap: 20px;
-    }
+display: grid;
+grid-template-columns: repeat(2,800px);
+gap: 20px;
+}
 
 .contact-grid-leftSide i{
 border: 1px solid gray;
 border-right: 0;
 padding: 10px;
 font-size: 18px;
- position: relative;
- top: 1px;
- left: 10px;
- background-color: rgb(48, 167, 111) ;
- color: white;
+position: relative;
+top: 1px;
+left: 10px;
+background-color: rgb(48, 167, 111) ;
+color: white;
 
 }
 
 .contact-grid-leftSide input{
 
-    width: 300px;
-    height: 40px;
-    border-left: 0;
+width: 300px;
+height: 40px;
+border-left: 0;
 }
 
 textarea{
-    width: 86%;
-    position: relative;
-    left: 10px;
-    
+width: 86%;
+position: relative;
+left: 10px;
+
 }
 
 .c-text{
-    padding-left: 40px;
+padding-left: 40px;
 }
 .flex-div input[type="checkbox"]{
-     width: 20px;
-     position: relative;
-     left:40px ;
-     
+    width: 20px;
+    position: relative;
+    left:40px ;
+    
 }
 
 .sm-button button[type="submit"]{
 
-  position: relative;
-  left: 280px;
+position: relative;
+left: 280px;
 }
 
 
 
 .contact-grid-rightSide .address i{
-    background-color:rgb(48, 167, 111) ;
-    color: white;
+background-color:rgb(48, 167, 111) ;
+color: white;
 }
 
 .icon i{
 
-    border: 1px solid gray;
-    
+border: 1px solid gray;
+
 }
 
 /* form end css */
 
 .contact-card-main{
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
 }
 .contact-card{
-    background-color:  rgb(216, 213, 213) ;
-     margin: 1px 1px;
-    box-shadow: 10px 10px 20px rgb(226, 223, 223);
-    padding: 5px;
+background-color:  rgb(216, 213, 213) ;
+    margin: 1px 1px;
+box-shadow: 10px 10px 20px rgb(226, 223, 223);
+padding: 5px;
 
 
 }
@@ -796,9 +824,9 @@ justify-content: center;
 
 .footer-nav ul li{
 padding: 10px 40px;
-    border: 1px solid gray;
-    background-color: rgb(48, 167, 111);
-    
+border: 1px solid gray;
+background-color: rgb(48, 167, 111);
+
 }
 
 .logos{
@@ -844,76 +872,76 @@ left: 0;
 }
 
 .actives i[id="open-bar"]{
-    display: none;
-  
-    
- }
-.actives  i[id="close-bar"]{
- display:block;
- }
+display: none;
 
- .actives .navbar-main{
-    height: 100vh;
- }
+
+}
+.actives  i[id="close-bar"]{
+display:block;
+}
+
+.actives .navbar-main{
+height: 100vh;
+}
 /* RESPONSIVE FOR MEADIA QUEARY */
 
 @media(max-width:1090px){
 
-   
-    .hambar{
-        display: block;
-    }
-    .navbar-main{
-        display: block;
-        position: absolute;
-        width: 100%;
-    }
-   
+
+.hambar{
+    display: block;
+}
+.navbar-main{
+    display: block;
+    position: absolute;
+    width: 100%;
+}
+
 
 .navbar-link {
-    display: none;
-    flex-direction: column;
-    justify-content: flex-start;
-    position: absolute;
-    top: 30%;
-    border: 0;
-    
+display: none;
+flex-direction: column;
+justify-content: flex-start;
+position: absolute;
+top: 30%;
+border: 0;
+
 
 }
 .actives .navbar-link{
-    display: block;
-    width: 97%;
-   
+display: block;
+width: 97%;
+
 }
 
 .navbar-link ul {
-    display: block;
-   
+display: block;
+
 }
 .navbar-link ul li{
-    border-bottom: 1px solid white;
-    padding-top:20px ;
+border-bottom: 1px solid white;
+padding-top:20px ;
 }
 
 .search-box{
-    display:flex;
+display:flex;
 }
 .actives .search-box{
-    display: none;
+display: none;
 }
 
 
 .logo a {
-    color: white;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 13px 0px;
+color: white;
+font-size: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 13px 0px;
 }
 
 .actives a{
-    padding: 0;
+padding: 0;
 }
 
 
@@ -921,106 +949,241 @@ left: 0;
 /* footer meadia  start*/
 
 .footer-nav ul {
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
-    left: -70px;
+display: flex;
+justify-content: flex-start;
+position: relative;
+left: 20px;
+
 }
 
 
 
 .footer-nav ul li {
-    padding: 4px 20px;
+padding: 4px 20px;
+    position: relative;
+    left: 50px;
 
 }
 
-  /* HOME PAGE RESPONSIVE END */
+
+.slider-text{
+
+position: absolute;
+top: 55%;
+left: 5%;
+color: white;
+z-index: 13;
+
+}
+
+.swiper:hover .swiper-button-prev,.swiper:hover .swiper-button-next{
+
+
+    margin-top: -100px;
+}
+
+/* HOME PAGE RESPONSIVE END */
 
 /* blog pages start here */
 
 .blog-grid{
-    display: block;
+display: block;
 }
 
 .blog-leftSide .blog-image img{
+width: 100%;
+}
+
+
+.full-height-container .blog-text{
+    padding: 20px;
+    background-color: rgb(231, 228, 228);
     width: 100%;
+
+}
+
+
+/* blog pages end */
+
+
+
+.contact-grid-container {
+
+    display: block;
+
     }
+
+.contact-grid-leftSide i{
+border: 1px solid gray;
+border-right: 0;
+padding: 10px;
+font-size: 18px;
+    position: relative;
+    top: 1px;
+    left: 10px;
+    background-color: rgb(48, 167, 111) ;
+    color: white;
+
+}
+
+.contact-grid-leftSide input{
+
+    width: 30%;
+    height: 40px;
+    border-left: 0;
+}
+
+textarea{
+    width: 400px;
+    position: relative;
+    left: 5px;
+    top: 10px;
     
+}
 
-    .full-height-container .blog-text{
-        padding: 20px;
-        background-color: rgb(231, 228, 228);
-        width: 100%;
+.c-text{
+    padding-left: 40px;
+    padding-top: 0px;
+}
+.flex-div input[type="checkbox"]{
+        width: 20px;
+        position: relative;
+        left:40px ;
+        
+}
+
+.sm-button button[type="submit"]{
+
+    position: relative;
+    left: 0px;
+    margin-top: 10px;
+}
+
+
+.contact-grid-rightSide{
+    margin-top: 50px;
     
-    }
-
-
-    /* blog pages end */
-
-
-
-    .contact-grid-container {
-
-        display: block;
+}
+.contact-grid-rightSide .address i{
+    background-color:rgb(48, 167, 111) ;
+    color: white;
+    font-size: 20px;
     
-        }
     
-    .contact-grid-leftSide i{
+}
+
+.icon i{
+
     border: 1px solid gray;
-    border-right: 0;
-    padding: 10px;
-    font-size: 18px;
-     position: relative;
-     top: 1px;
-     left: 10px;
-     background-color: rgb(48, 167, 111) ;
-     color: white;
     
+}
+.top-center-text {
+    position: relative;
+    left: 4%;
+    width: 80%;
+}
+
+
+/* form end css */
+
+.contact-box{
+
+
+    margin: 10px;
+    width: 500px;
+    
+    padding: 2%;
+    border-bottom: 2px solid rgb(48, 167, 111);
+    box-shadow: 10px 10px 20px rgb(187, 186, 186);
+    
+}
+
+
+
+}
+
+
+
+
+@media(max-width:800px){
+
+.position-set{
+    position: relative;
+    top: 50px;
+    z-index: 15;
     }
-    
-    .contact-grid-leftSide input{
-    
+
+    .slider-text h1{
+
+        font-size: 40px;
+        }
+    /* h1{
+        font-size: 10px;
+    } */
+        /* HOME PAGE RESPONSIVE END */
+
+
+        /* contact page start */
+
+
+        .contact-grid-leftSide input{
+
         width: 30%;
-        height: 40px;
+        height: 32px;
         border-left: 0;
     }
     
+    .contact-grid-leftSide i{
+            width: 30px;
+            padding: 6px;
+            
+    }
     textarea{
         width: 400px;
+    
         position: relative;
         left: 5px;
         top: 10px;
-       
+        
     }
-    
+
+
+        textarea{
+        width: 200px;
+        position: relative;
+        left: 20%;
+        top: 10px;
+        
+    }
+
+
     .c-text{
         padding-left: 40px;
         padding-top: 0px;
     }
     .flex-div input[type="checkbox"]{
-         width: 20px;
-         position: relative;
-         left:40px ;
-         
+            width: 15px;
+            position: relative;
+            left:40px ;
+            
     }
     
     .sm-button button[type="submit"]{
     
-      position: relative;
-      left: 0px;
-      margin-top: 10px;
+        position: relative;
+        left: 0px;
     }
     
     
     .contact-grid-rightSide{
         margin-top: 50px;
-       
+        
     }
     .contact-grid-rightSide .address i{
         background-color:rgb(48, 167, 111) ;
         color: white;
         font-size: 20px;
-        
+        margin-left: 10px;
         
     }
     
@@ -1032,165 +1195,50 @@ left: 0;
     .top-center-text {
         position: relative;
         left: 4%;
-        width: 80%;
+        width: 100%;
     }
     
     
     /* form end css */
     
-    .contact-box{
-
-
-        margin: 10px;
-        width: 500px;
-       
-        padding: 2%;
-        border-bottom: 2px solid rgb(48, 167, 111);
-        box-shadow: 10px 10px 20px rgb(187, 186, 186);
-      
-   }
-   
-   
     
-}
-
-
-
-
-@media(max-width:800px){
-
-    .position-set{
-        position: relative;
-        top: 50px;
-        z-index: 15;
-        }
-
-        .slider-text h1{
-
-            font-size: 40px;
-            }
-        /* h1{
-            font-size: 10px;
-        } */
-          /* HOME PAGE RESPONSIVE END */
-
-
-          /* contact page start */
-
-  
-          .contact-grid-leftSide input{
     
-            width: 30%;
-            height: 32px;
-            border-left: 0;
-        }
-        
-        .contact-grid-leftSide i{
-             width: 30px;
-              padding: 6px;
-             
-        }
-        textarea{
-            width: 400px;
-        
-            position: relative;
-            left: 5px;
-            top: 10px;
-           
-        }
-
-
-          textarea{
-            width: 200px;
-            position: relative;
-            left: 20%;
-            top: 10px;
-           
-        }
-
-
-        .c-text{
-            padding-left: 40px;
-            padding-top: 0px;
-        }
-        .flex-div input[type="checkbox"]{
-             width: 15px;
-             position: relative;
-             left:40px ;
-             
-        }
-        
-        .sm-button button[type="submit"]{
-        
-          position: relative;
-          left: 0px;
-        }
-        
-        
-        .contact-grid-rightSide{
-            margin-top: 50px;
-           
-        }
-        .contact-grid-rightSide .address i{
-            background-color:rgb(48, 167, 111) ;
-            color: white;
-            font-size: 20px;
-            margin-left: 10px;
-            
-        }
-        
-        .icon i{
-        
-            border: 1px solid gray;
-            
-        }
-        .top-center-text {
-            position: relative;
-            left: 4%;
-            width: 100%;
-        }
-        
-        
-        /* form end css */
-        
-       
-        
-        
-       
+    
+    
 }
 
 
 @media(max-width:594px){
 
-    .slider-text h1{
+.slider-text h1{
 
-        font-size: 30px;
-        }
-
-    .footer-nav ul li {
-        padding: 8px 5px;
-    
+    font-size: 30px;
     }
 
-    .footer-nav ul {
-        display: flex;
-        justify-content: flex-start;
-        position: relative;
-        left: -70px;
-    }
+.footer-nav ul li {
+    padding: 8px 5px;
+
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    left: -70px;
+}
 
 
-    /* HOME PAGE RESPONSIVE END */
-    
-
-    /* about pages start */
-
-    .section-p1 {
-        padding: 0px 20px;
-    }
+/* HOME PAGE RESPONSIVE END */
 
 
-    /* about pages end */
+/* about pages start */
+
+.section-p1 {
+    padding: 0px 20px;
+}
+
+
+/* about pages end */
 
 }
 
@@ -1199,22 +1247,22 @@ left: 0;
 @media(max-width:400px){
 
 
-    .slider-text h1{
+.slider-text h1{
 
-        font-size: 20px;
-        }
-    .work2-grid{
-        border-top: 2px solid rgb(48, 167, 111);
-        
-            width: 90%;
-            display: block;
-            grid-template-columns: 150px 200px 1fr;
-            padding-top: 15%;
-        
-        }
+    font-size: 20px;
+    }
+.work2-grid{
+    border-top: 2px solid rgb(48, 167, 111);
+    
+        width: 90%;
+        display: block;
+        grid-template-columns: 150px 200px 1fr;
+        padding-top: 15%;
+    
+    }
 
 
-        /* HOME PAGE RESPONSIVE END */
-   
+    /* HOME PAGE RESPONSIVE END */
+
 
 }
