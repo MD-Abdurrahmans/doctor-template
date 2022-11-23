@@ -70,6 +70,14 @@
 //  ];
 
 
+let preload=document.getElementById("preload");
+
+
+window.addEventListener( "load",function(){
+
+  preload.style.display="none";
+})
+
 let hambar=document.querySelector(".hambar");
 
 let active=document.querySelector(".fixed-container");
