@@ -254,6 +254,7 @@ animation: rotated 10s  infinite ;
 }
 .swiper .swiper-pagination-bullet-active{
 background-color: white;
+display: none;
 }
 
 
@@ -280,7 +281,7 @@ align-items: center;
 
 
 .big-button button{
-padding: 15px 25px;
+padding: 8px 20px;
 border: 0;
 border-radius: 5px;
 font-weight: bold

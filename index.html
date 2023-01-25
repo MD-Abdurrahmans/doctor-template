@@ -24,6 +24,7 @@
         <i id="open-bar" class="fa-solid fa-bars"></i>
         <i id="close-bar" class="fa-regular fa-circle-xmark"></i>
       </div>
+      
       <nav class="navbar-main">
      
         <div class="logo">
@@ -96,7 +97,7 @@
 <div class="swiper-wrapper">
   <!-- Slides -->
   <div class="swiper-slide">
-    <img class="img-fluid" src="images/slider1.jpg" alt="" >
+    <img style="overflow: hidden; object-fit: fill;" class="img-fluid " src="images/slider1.jpg" alt="" >
 
     <div class="slider-text">
       <h1>Meet Our Doctor's Team</h1>
@@ -108,7 +109,7 @@
     </div>
   </div>
       <div class="swiper-slide">
-        <img class="img-fluid" src="images/slider2.jpg" alt="">
+        <img style="overflow: hidden; min-height: 80vh;"  class="img-fluid" src="images/slider2.jpg" alt="">
 
         <div class="slider-text">
           <h1>Book Your Appointment</h1>
@@ -151,7 +152,7 @@
     </div>
 
 
-    <div class="col-sm-6  col-lg-3 box">
+    <div class="col-sm-6  col-lg-3 box m-2">
       <div class="card box-padding">
         <div class="card-body">
          <div class="card-flex">
@@ -167,7 +168,7 @@
       </div>
     </div>
 
-    <div class="col-sm-6  col-lg-3 box">
+    <div class="col-sm-6  col-lg-3 box ">
       <div class="card box-padding " >
         <div class="card-body">
           <div class="card-flex">
@@ -192,20 +193,20 @@
 
  
 
-<section class="section-work1 section-p1 section-m1 ">
+<section class="section-work1 section-p1 section-m1 mx-5">
 
   <div class="row ">
 
-    <div class="col-lg-6  ">
+    <div class="col-lg-6 -5 mt-5  ">
     
       <h2 class="left-border">What We do</h2>
       <div class="section-center">
 
 
-      <div class="sm-button">
-        <button type="button" class ="filter-btn active" data-id="Service #1"> Service #1</button>
-        <button type="button" class ="filter-btn" data-id="Service #2"> Service #2</button>
-        <button type="button" class ="filter-btn" data-id="Service #3"> Service #3</button>
+      <div class="sm-button mb-2">
+        <button type="button" class ="filter-btn active" data-id="Service #1"> Service-1</button>
+        <button type="button" class ="filter-btn" data-id="Service #2"> Service-2</button>
+        <button type="button" class ="filter-btn " data-id="Service #3"> Service-3</button>
        </div>
     
     
@@ -349,7 +350,7 @@
 <!-- SECTION WORK 1 END HTML -->
 
 
-<section class="section-work2 section-p1  section-m1">
+<section class="section-work2 section-p1  section-m1 mx-5">
   <h2 class="left-border">Up Comming Event</h2>
   <div class="glider-contain">
     <div class="glider">
@@ -375,8 +376,8 @@
 
               sollicitudin leo, eu oare nibh sodales et. Vestibulum blandit,eu oare nibh sodales et.</p>
               
-          <div class="sm-button">
-            <button type="button"> <a href="#" class="btn">Read More</a></button>
+          <div class="sm-button mb-3">
+            <button type="button"> <a href="#" class="btn ">Read More</a></button>
           </div>
           </div>
 
@@ -407,7 +408,7 @@
 
             sollicitudin leo, eu oare nibh sodales et. Vestibulum blandit,eu oare nibh sodales et.</p>
             
-        <div class="sm-button">
+        <div class="sm-button mb-3">
           <button type="button"> <a href="#" class="btn">Read More</a></button>
         </div>
         </div>
@@ -439,7 +440,7 @@
 
             sollicitudin leo, eu oare nibh sodales et. Vestibulum blandit,eu oare nibh sodales et.</p>
             
-        <div class="sm-button">
+        <div class="sm-button mb-3">
           <button type="button"> <a href="#" class="btn">Read More</a></button>
         </div>
         </div>
@@ -469,7 +470,7 @@
 
             sollicitudin leo, eu oare nibh sodales et. Vestibulum blandit,eu oare nibh sodales et.</p>
             
-        <div class="sm-button">
+        <div class="sm-button mb-3">
           <button type="button"> <a href="#" class="btn">Read More</a></button>
         </div>
         </div>
@@ -492,7 +493,7 @@
 <!-- SECTION WORK2 HTML END -->
 
 
-<section class="section-work3 section-p1 section-m1">
+<section class="section-work3 section-p1 section-m1 mx-5">
   <h2 class="left-border">Our Doctor Team</h2>
   <div class="glider-container">
 
@@ -626,7 +627,7 @@
  
  <div class="row">
 
-  <nav class="footer-nav">
+  <!-- <nav class="footer-nav">
     <ul>
       <li><a href=""> Home </a></li>
       <li><a href=""> About </a></li>
@@ -635,7 +636,7 @@
       <li><a href=""> Our Profile </a></li>
       <li><a href="">  Contact </a></li>
     </ul>
-  </nav>
+  </nav> -->
  </div>
 
 
@@ -719,7 +720,8 @@
  <script src="https://kit.fontawesome.com/83315f1487.js" crossorigin="anonymous"></script>
     <!-- bootstrap link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script>
+   
+   <script>
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -739,6 +741,7 @@ const swiper = new Swiper('.swiper', {
   },
 });
     </script>
+    
 <script>
 
 new Glider(document.querySelector('.glider'), {
